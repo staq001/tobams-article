@@ -50,20 +50,3 @@ Every API endpoint begins with:
 ```bash
 /api/v1
 ```
-# Others
-## Technical Choices
-Used all of these technologies for the following reasons.
-*  TypeScript for type safety and because it meshes well with Express and MongoDB
-*  Express.js because it makes building, testing, and scaling API routes straightforward.
-*  Rate Limiter because protecting the API from abuse and overuse is a must.
-*  Helmet because every app should have basic HTTP security headers by default.
-*  Logger for structured logs with levels (info, error, debug) make debugging and monitoring painless.
-*  Gemini AI because, even in free mode, it allows around 30 queries/day, which is enough for testing or lightweight usage.
-*  MongoDB because it's schema-flexible and adapts as the data model evolves.
-*  MongoDB because it stores data in JSON-like documents, and it scales easily and supports complex queries.
-
-## Approach to Stretch Goal
-I picked and implemented the second option of the stretch goal — AI-Powered Summary Generation. It was quite straightforward, I would say. All I did was query the Google Gemini AI API, asking it to generate a detailed yet concise summary based on the article's title.
-
-## Next steps
-Users could definitely use authentication for verification, especially in a real-world scenario. Additionally, the schemas of both models could be expanded and padded with stricter validations to ensure the data collected is accurate and well-documented. Lastly, tests are an essential part of software engineering, so it would be beneficial to write robust test suites for each implemented service. All of these are what I would do if there was more time. Thank you!
